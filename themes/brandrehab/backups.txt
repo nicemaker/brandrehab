@@ -1,0 +1,47 @@
+
+<?php  defined('C5_EXECUTE') or die("Access Denied.");
+		Loader::model('page_list');
+		
+		$page = Page::getCurrentPage();
+		
+		$pageList = new PageList();
+		$pageList->filterByParentID($page->getCollectionID());
+		$pages = $pageList->get();
+		
+		
+		foreach($pages  as $child){
+				
+			$blocks = $child->getBlocks('Main');
+			foreach ($blocks as $b){
+				
+				$b->display();
+				
+			}
+			
+		}
+?>
+
+		/*	$pt = CollectionType::getByHandle("portfolio");
+			
+			$data = array(
+        		'name' =>'name',       
+			);
+			
+			$newPage = $parentPage->add($pt,$data);
+
+	
+			$bt = BlockType::getByHandle('portfoliosprite');
+							$data = array();
+							$data['x'] = 200;
+							$data['y'] = 300;
+							$data['speed_x'] = 2;
+							$data['speed_y'] = 3;
+							$data['content'] = t('<h2>Sidebar</h2><p>Everything about Concrete is completely customizable through the CMS. This is a separate area from the main content on the homepage. You can <a title="blocks on concrete5" href="http://www.concrete5.org/help/editing/arrange_blocks_on_a_page/" target="_blank">drag and drop blocks</a> like this around your layout.</p>');
+			
+			//$area = new Area('Main');
+			
+			$newPage->addBlock($bt, 'Main', $data);				
+			
+			*/
+			
+			
