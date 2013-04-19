@@ -1,0 +1,486 @@
+ @font-face {
+ 	font-family: 'Geometric415BT-LiteA';
+ 	src: url('css/webfonts/2303FF_0_0.eot');
+ 	src: url('css/webfonts/2303FF_0_0.eot?#iefix') format('embedded-opentype'),
+ 	url('css/webfonts/2303FF_0_0.woff') format('woff'),
+ 	url('css/webfonts/2303FF_0_0.ttf') format('truetype');}
+ 
+  
+ @font-face {
+ 	font-family: 'Geometric415BT-BlackA';
+ 	src: url('css/webfonts/2303FF_1_0.eot');
+ 	src: url('css/webfonts/2303FF_1_0.eot?#iefix') format('embedded-opentype'),
+ 	url('css/webfonts/2303FF_1_0.woff') format('woff'),
+ 	url('css/webfonts/2303FF_1_0.ttf') format('truetype');
+ 	}
+ 
+ 
+
+body{ }
+
+.default{
+	background:#FBFBFB;
+	overflow:scroll;
+}
+
+a{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#ffffff;
+}
+
+ a:hover{
+	text-decoration:underline;
+}
+
+
+#nav{
+	z-index:100;
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:block;
+	width:100%;
+
+}
+
+#compass{
+	right:30px;
+	top:10px;
+	position:absolute;
+	display:none;	
+}
+
+.logo{
+	top:30px;
+	left:40px;
+	z-index:100;
+	width:325px;
+	height:47px;
+	position:absolute;
+	background: url('images/brand-rehab-logo.png');
+}
+
+
+.imageDescription{
+	font:20px/22px "Geometric415BT-LiteA", arial, sans-serif;
+	color:white;
+	font-weight:200;
+	position:absolute		;
+	display:block;
+	height:24px;
+	float:left;
+	margin:0px 5px 0px 0px;
+	padding: 0px 16px 0px 0px;
+	background: url('images/arrow_thin.png') no-repeat right;
+}
+
+
+.toolTip{
+	font:20px/22px "Geometric415BT-LiteA", arial, sans-serif;
+	color:white;
+	font-weight:200;
+	position:absolute;
+	display:none;
+	right:97px;
+	top:23px;
+	width:300px;
+	text-align:right;
+
+}
+
+.left{
+	display:block;
+	position:absolute;
+	top:20px;
+	right:57px;
+	width:34px;
+	height:37px;
+	background: url('images/arrow_left_active.png') no-repeat;
+	
+}
+
+.left.active{
+	background: url('images/arrow_left_active.png') no-repeat;
+}
+
+.left.over{
+	background: url('images/arrow_left_over.png') no-repeat;
+}
+
+.right{
+	display:block;
+	position:absolute;
+	top:20px;
+	right:0px;
+	width:34px;
+	height:36px;
+	background: url('images/arrow_right_active.png') no-repeat;
+	
+}
+
+.right.active{
+	background: url('images/arrow_right_active.png') no-repeat;
+}
+
+
+
+.right.over{
+	background: url('images/arrow_right_over.png') no-repeat;
+}
+
+
+.down{
+	display:none;
+	position:absolute;
+	top:58px;
+	right:20px;
+	width:33px;
+	height:16px;
+	background: url('images/arrow_down_inactive.png') no-repeat;
+	
+}
+
+.down.active{
+	background: url('images/arrow_down_active.png') no-repeat;
+}
+
+.down.over{
+	background: url('images/arrow_down_down.png') no-repeat;
+}
+
+.up{
+	position:absolute;
+	top:0px;
+	right:20px;
+	display:none;
+	width:33px;
+	height:16px;
+	background: url('images/arrow_up_inactive.png') no-repeat;
+
+}
+
+
+.up.active{
+	background: url('images/arrow_up_active.png');
+ 
+}
+
+.up.over{
+	background: url('images/arrow_up_down.png');
+}
+
+#pager{
+	right:30px;
+	top:30px;
+	position:absolute;
+}
+ 
+a.pagerButton{
+	font:20px/33px "Geometric415BT-LiteA", arial, sans-serif;
+	text-decoration:none;
+	text-align:right;
+	clear:both;
+	display:block;
+	margin-bottom:5px;
+	height:36px;
+	padding-right:44px;
+	background: url('images/circle_inactive.png') no-repeat right;
+}
+
+a.pagerButton.active{
+	background: url('images/arrow_right_active.png') no-repeat right;
+ 
+}
+
+a.pagerButton.active.over{
+	background: url('images/arrow_right_over.png') no-repeat right;
+ 
+}
+
+a.pagerButton.over{
+	background: url('images/circle_active.png') no-repeat right;
+}
+
+
+.circle{
+	position:absolute;
+	top:20px;
+	right:28px;
+	display:block;
+	width:34px;
+	height:36px;
+	background: url('images/circle_active.png');
+}
+
+
+.circle.active{
+	background: url('images/circle_active.png');
+
+}
+
+.circle.over{
+	background: url('images/circle_over.png');
+
+}
+
+
+
+
+.fullWidth{
+	background: #bbb3c3;		
+}
+
+.fullWidth .logo{
+	margin:30px;
+	position:static;
+}
+
+
+.fullWidth .content{
+	position:static;
+	margin:30px;
+	width:950px;
+}
+
+.fullWidth .content p{
+	font:18px/22px "Geometric415BT-LiteA", arial, sans-serif;
+	color:white;
+	font-weight:light;
+}
+
+.fullWidth .content .emphasize{
+	font:25px/28px "Geometric415BT-BlackA", arial, sans-serif;
+	color:white;
+	letter-spacing:0px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	display:inline;
+}
+
+
+.portfolio{
+	width:100%;
+	height:100%;
+    display:block;
+    overflow:visible;
+	background-repeat:no-repeat;
+    border:0px none #00ffFF;
+    position:relative;
+
+}
+
+
+.sprite{
+    display:block;
+    position:absolute;
+    background-repeat: no-repeat;
+    margin:0px;
+ 	padding:0px;
+}
+
+.meta{
+    display:none;
+}
+
+.hidden{
+	display:none;
+}
+
+.black{
+	color:#000000;	
+}
+
+.sprite .content p{
+	font:28px/28px "Geometric415BT-LiteA", arial, sans-serif;
+	color:white;
+	font-weight:100;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px; 
+}
+
+.sprite .content .emphasize{
+	font:28px/28px "Geometric415BT-BlackA", arial, sans-serif;
+	color:white;
+	letter-spacing:0px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	display:inline;
+}
+
+
+.spriteEditMode {
+	position:static;
+	height:150px;
+}
+
+
+.sprite .content h1{
+	font:125px/106px "Geometric415BT-BlackA", arial, sans-serif;
+	font-family:"Geometric415BT-BlackA" arial sans-serif;
+	color:white;
+	letter-spacing:0px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px -5px;
+}
+
+
+.sprite .content h2{
+	font:50px/50px "Geometric415BT-BlackA", arial, sans-serif;
+	color:white;
+	letter-spacing:3px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+.sprite .content h3{
+	font:26px/26px "Geometric415BT-LiteA", arial, sans-serif;
+	color:white;
+	letter-spacing:0px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 2px;
+}
+
+#footer ul{
+	margin:0px;
+	padding:0px; 
+}
+
+#footer ul li{
+	display:inline;
+	font:20px/20px "Geometric415BT-LiteA", arial, sans-serif;
+	color:#dbdadf;
+	font-weight:200;
+	margin:0px 10px 0px 0px;
+}
+
+#footer ul li a{
+	color:#dbdadf;
+	font-weight:200;
+	text-decoration:none;
+}
+
+#footer ul li a:visited{
+	color:#dbdadf;
+}
+
+#footer ul li a:hover{
+	color:#dbdadf;
+	text-decoration:underline;
+}
+
+
+
+#content{
+    overflow:hidden;
+    position:relative;
+    
+    
+}
+
+
+.readMore{
+	display:none;
+	font-size:28px;
+	font-weight:bold;
+	text-decoration:underline;
+	white-space:nowrap;
+}
+
+
+#trace{
+	font:14px 'Courier';
+	color:white;
+	position:fixed;
+	width:100%;
+	display:none;
+	left:0px;
+	top:0px;
+    background-color: black;
+    padding:10px;
+    text-align: left;
+    z-index:200;
+
+
+}
+
+body{
+	overflow:nav;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+div{ 
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+.portfolio > .preload{
+	display:none;
+	position:absolute;
+	top:28px;
+	left:1640px;
+	//width:200px;
+	height:30px;
+	background: url('images/285.gif') no-repeat right;
+	font:20px/20px "Geometric415BT-LiteA",arial, sans-serif;
+	color:white;
+	font-weight:100;
+	padding-right:45px;
+	padding-top:7px;
+	z-index:200;
+
+}
+
+
+#scrollSize{
+	visiblity:hidden;
+}
+
+#c5Margin{
+	position:fixed;
+	overflow:visible;
+	height:100%;
+}
+
+#cache{
+	background:rgb(187, 179, 195);
+	display:block;
+	width:1280px;
+	height:100%;
+	position:relative;
+	top:0px;
+	left:0px;
+	overflow:hidden;
+	z-index:0;
+}
+#cache > .preload{
+	position:absolute;
+	top:300px;
+	left:560px;
+	//width:200px;
+	height:30px;
+	background: url('images/285.gif') no-repeat right;
+	font:20px/20px "Geometric415BT-LiteA", arial, sans-serif;
+	color:white;
+	font-weight:100;
+	padding-right:45px;
+	padding-top:7px;
+
+}
+
+
+#saveArea{
+    display:none;
+    top:150px;
+    left:40px;
+	width:1200px; 
+	height:605px;
+	border:1px solid #AAAAAA;
+	position:absolute;
+	pointer-events:none;
+	z-index:101;
+} 
